@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid #00ff41;
+  box-shadow: 0 4px 20px rgba(0, 255, 65, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ff41;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 2px solid #00ff41;
+  color: #00ff41;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: monospace;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-btn:hover {
+  background: #00ff41;
+  color: #000;
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.6);
+  transform: translateY(-2px);
+}
+
+.nav-btn.active {
+  background: #00ff41;
+  color: #000;
+}
+
+/* Main Content */
+.container {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Content Sections */
+.content-section {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+.content-section.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.section-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00ff41;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 255, 65, 0.1);
+}
+
+.section-card h2 {
+  color: #00ff41;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+.section-card h3 {
+  color: #00ff41;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-card p, .section-card li {
+  line-height: 1.8;
+  color: #d0d0d0;
+  margin-bottom: 0.5rem;
+}
+
+.section-card ul {
+  list-style-position: inside;
+  margin-left: 1rem;
+}
+
+/* Terminal Window */
+.terminal-window {
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #00ff41;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 255, 65, 0.2);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.terminal-header {
+  background: rgba(0, 255, 65, 0.1);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid #00ff41;
+}
+
+.terminal-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.terminal-btn.close { background: #ff5f56; }
+.terminal-btn.minimize { background: #ffbd2e; }
+.terminal-btn.maximize { background: #27c93f; }
+
+.terminal-title {
+  margin-left: 1rem;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #00ff41;
+}
+
+#terminal {
+  height: 500px;
+  padding: 1rem;
+}
+
+.terminal {
+  --background: #000;
+  --color: #00ff41;
+  --size: 1.2;
+  font-size: 14px;
+}
+
+/* Contact Links */
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.contact-link {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: rgba(0, 255, 65, 0.1);
+  border: 2px solid #00ff41;
+  color: #00ff41;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-family: monospace;
+}
+
+.contact-link:hover {
+  background: #00ff41;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 255, 65, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .nav-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  #terminal {
+    height: 400px;
+  }
+}

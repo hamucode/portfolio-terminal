@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Salameh - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">MUHAMMAD SALAMEH</div>
+      <nav>
+        <a href="/" class="nav-btn active">Home</a>
+        <a href="/about" class="nav-btn">About</a>
+        <a href="/education" class="nav-btn">Education</a>
+        <a href="/skills" class="nav-btn">Skills</a>
+        <a href="/contact" class="nav-btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="section-card">
+      <h2>Welcome to My Portfolio 👋</h2>
+      <p>Feel free to explore using the navigation buttons above, or use the terminal below if you prefer the command-line interface!</p>
+      <p style="margin-top: 1rem; color: #00ff41;">💡 Terminal commands: help, about, education, skills, contact, clear</p>
+    </div>
+    
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <button class="terminal-btn close"></button>
+        <button class="terminal-btn minimize"></button>
+        <button class="terminal-btn maximize"></button>
+        <span class="terminal-title">guest@portfolio:~</span>
+      </div>
+      <div id="terminal"></div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQueryTerminal -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+
+  <!-- Our custom JS -->
+  <script src="terminal.js"></script>
+</body>
+</html>
