@@ -11,35 +11,80 @@ $(document).ready(function () {
         this.echo('  clear      - Clear the terminal');
       },
 
-      about: function () {
+    about: function () {
         this.echo("\n");
-        this.echo("Hi! I'm Muhammad, a Computer Science student at Carleton University, passionate about technology and cybersecurity.");
-        this.echo("I'm dedicated to building secure, efficient software and exploring the fascinating world of information security. My goal is to contribute to creating safer digital experiences for everyone.");
+        this.echo("👋 Hi! I'm Muhammad, a Computer Science student at Carleton University, passionate about technology and cybersecurity.");
         this.echo("\n");
-      },
+        this.echo("I'm dedicated to building secure, efficient software and exploring the fascinating world of information security.");
+        this.echo("My goal is to contribute to creating safer digital experiences for everyone.");
+        this.echo("\n");
+        this.echo("🌍 When I’m not studying, I enjoy staying active and creative.");
+        this.echo("You can often find me playing soccer, reading, traveling, taking photos, target shooting, or debugging and improving my homelab setup.");
+        this.echo("\n");
+  },
+
 
       education: function () {
         this.echo("\n");
-        this.echo("🎓 Education:");
-        this.echo("  - B.Sc. in Computer Science, Carleton University");
-        this.echo("    Focus: Cybersecurity and software development fundamentals");
-        this.echo("  - Relevant Courses: Cryptography, Software Dev, Network Security, Algorithms");
+        this.echo("🎓 Education");
+        this.echo("  Bachelor of Science in Computer Science: Cybersecurity Stream");
+        this.echo("  Carleton University");
+        this.echo("  September 2023 - Present (Expected Graduation: July 2027)");
+        this.echo("  Ottawa, ON");
+        this.echo("\n");
+        this.echo("📘 Relevant Courses:");
+        this.echo("  - Applied Cryptography and Authentication");
+        this.echo("  - Software Development");
+        this.echo("  - Systems Programming");
+        this.echo("  - Algorithms & Data Structures");
+        this.echo("  - Database Management Systems");
+        this.echo("\n");
+        this.echo("🤝 Extracurricular Activities:");
+        this.echo("  - Carleton University Cybersecurity Club Member");
+        this.echo("  - Carleton University Muslim Student Association Member");
         this.echo("\n");
       },
 
-      skills: function () {
-        this.echo("\n");
-        this.echo("💻 Developer Skills:");
-        this.echo("  - Languages: Java, Python, C, C++, JavaScript, HTML, CSS");
-        this.echo("  - Tools: Git, VS Code, Linux");
-        this.echo("\n");
-        this.echo("🔐 Cybersecurity Skills:");
-        this.echo("  - Encryption & Hashing: AES, SHA, salts, MACs, digital signatures");
-        this.echo("  - Password cracking & brute-force analysis");
-        this.echo("  - Security protocols, authentication systems, cryptographic libraries");
-        this.echo("  - Risk assessment & secure coding principles");
-        this.echo("\n");
-      },
+
+   skills: function () {
+  this.echo("\n");
+  this.echo("💻 Developer Skills:");
+  this.echo("  Programming Languages:");
+  this.echo("    - Python");
+  this.echo("    - Java");
+  this.echo("    - C / C++");
+  this.echo("    - SQL");
+  this.echo("    - JavaScript");
+  this.echo("    - HTML & CSS");
+  this.echo("\n");
+  this.echo("  Tools & Technologies:");
+  this.echo("    - Git & Version Control");
+  this.echo("    - VS Code");
+  this.echo("    - IntelliJ IDEA");
+  this.echo("    - Linux/Unix Systems");
+  this.echo("    - Windows");
+  this.echo("    - macOS");
+  this.echo("\n");
+  this.echo("🔐 Cybersecurity Skills:");
+  this.echo("  Tools:");
+  this.echo("    - Wireshark");
+  this.echo("    - Nmap");
+  this.echo("    - Burp Suite");
+  this.echo("    - Ghidra");
+  this.echo("    - Splunk");
+  this.echo("\n");
+  this.echo("  Concepts:");
+  this.echo("    - SOC Operations");
+  this.echo("    - Vulnerability Assessment");
+  this.echo("    - Cryptography");
+  this.echo("    - Reverse Engineering");
+  this.echo("    - CIA Triad");
+  this.echo("    - Threat Intelligence");
+  this.echo("    - OSINT");
+  this.echo("    - Network Protocols");
+  this.echo("\n");
+},
+
 
       contact: function () {
         this.echo("\n");
