@@ -13,8 +13,8 @@ $(document).ready(function () {
 
       about: function () {
         this.echo("\n");
-        this.echo("Hi! I'm Muhammad, a Computer Science student @ Carleton University,");
-        this.echo("passionate about technology and cybersecurity.");
+        this.echo("Hi! I'm Muhammad, a Computer Science student at Carleton University, passionate about technology and cybersecurity.");
+        this.echo("I'm dedicated to building secure, efficient software and exploring the fascinating world of information security. My goal is to contribute to creating safer digital experiences for everyone.");
         this.echo("\n");
       },
 
