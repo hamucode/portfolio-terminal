@@ -45,6 +45,13 @@ $(document).ready(function () {
         this.echo("\n");
       },
 
+      abdul: function () {
+        this.echo("\n");
+        this.echo("hamu and abdul swag city soon!");
+        this.echo("\n");
+
+      },
+
 
    skills: function () {
   this.echo("\n");
